@@ -32,6 +32,7 @@ function apt_purge_tools(){
 	ophcrack
 	sl
 	scanmem
+ 	deluge 
 	manaplus
 	zenmap)
     for i in "${A_TOOLS[@]}"; do
