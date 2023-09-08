@@ -79,6 +79,8 @@ source "$(dirname "${0}")/scripts/app_rm_snap.sh"
 # protect
 source "$(dirname "${0}")/scripts/protect_antivirus.sh"
 source "$(dirname "${0}")/scripts/protect_firewall.sh"
+# sj custom
+source "$(dirname "${0}")/scripts/sj_script.sh"
 
 # forensics
 source "$(dirname "${0}")/scripts/forensics.sh"
