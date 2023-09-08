@@ -317,6 +317,7 @@ function execute_option(){
             ;;
         "${opt_sj_custom}")
             echo "SJ's customy thingy worked."
+            do_stuff_insj
             ;;
         "${opt_quit}" | 'q' | 'Q')
             write_log_entry "${logpath}" "___FINISHED SCBC FIGHTCLUB___" 
