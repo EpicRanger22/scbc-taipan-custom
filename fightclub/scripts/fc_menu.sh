@@ -66,6 +66,7 @@ function build_options_menu(){
     opt_quit="FightClub: Quit"
     opt_show_functions="FightClub: Show available functions"
     opt_clean_menu="FightClub: Redisplay  menu"
+    opt_sj_custom="SJ: Custom Test"
    
 
     # 2
@@ -101,6 +102,7 @@ function build_options_menu(){
         "${opt_rm_snap}"
         "${opt_clean_menu}"
         "${opt_show_functions}" 
+        "${opt_sj_custom}"
         )
     num_options="${#A_OPTIONS[@]}"
     # array for tracking number of runs per option, initialised to 0 using shell paremeter expansion syntax
@@ -312,6 +314,9 @@ function execute_option(){
             a_functions=("$(declare -F | awk '{print $3}')")
             echo "${a_functions}"
             #read -p "Enter a function name to run: "
+            ;;
+        "${opt_sj_custom}")
+            echo "SJ's customy thingy worked."
             ;;
         "${opt_quit}" | 'q' | 'Q')
             write_log_entry "${logpath}" "___FINISHED SCBC FIGHTCLUB___" 
